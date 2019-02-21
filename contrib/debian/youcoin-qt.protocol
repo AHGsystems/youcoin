@@ -1,0 +1,11 @@
+[Protocol]
+exec=youcoin-qt '%u'
+protocol=youcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

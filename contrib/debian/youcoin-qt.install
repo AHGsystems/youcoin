@@ -1,0 +1,6 @@
+usr/local/bin/youcoin-qt usr/bin
+share/pixmaps/youcoin32.xpm usr/share/pixmaps
+share/pixmaps/youcoin16.xpm usr/share/pixmaps
+share/pixmaps/youcoin128.png usr/share/pixmaps
+debian/youcoin-qt.desktop usr/share/applications
+debian/youcoin-qt.protocol usr/share/kde4/services/

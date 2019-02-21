@@ -1,0 +1,70 @@
+Source: youcoin
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@youcoin.org>
+Uploaders: Holger Schinzel <holger@youcoin.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.youcoin.org/
+Vcs-Git: git://github.com/youcoinpay/youcoin.git
+Vcs-Browser: https://github.com/youcoinpay/youcoin
+
+Package: youcoind
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ YOUCOIN is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. YOUCOIN uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. YOUCOIN Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, youcoind, and the CLI tool
+ youcoin-cli to interact with the daemon.
+
+Package: youcoin-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ YOUCOIN is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. YOUCOIN uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. YOUCOIN Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides YOUCOIN-Qt, a GUI for YOUCOIN based on Qt.
+
+Package: youcoin-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ YOUCOIN is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. YOUCOIN uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. YOUCOIN Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides youcoin-tx, a command-line transaction creation
+ tool which can be used without a youcoin daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YOUCOIN Core
+Comment=YOUCOIN P2P Cryptocurrency
+Comment[de]=Verbinde mit dem YOUCOIN peer-to-peer Netzwerk
+Comment[fr]=YOUCOIN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=YOUCOIN, eşten eşe kriptografik sanal para birimi
+Exec=youcoin-qt %u
+Terminal=false
+Type=Application
+Icon=youcoin128
+MimeType=x-scheme-handler/youcoin;
+Categories=Office;Finance;
